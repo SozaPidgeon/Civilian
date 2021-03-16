@@ -8,7 +8,7 @@ import java.awt.*;
 import java.util.concurrent.TimeUnit;
 
 public class DiscordManager {
-	private static final String token = "ODAxNDA0NzgxMzQ0MTk0NTYx.YAgMXQ.r17K8LPTVe8fz4Q-nmw9I3OpEG4";
+	private static final String token = "ODAxNDA0NzgxMzQ0MTk0NTYx.YAgMXQ.iC_wV2yonJGRpcuqIBagWUdDfl0";
 	
 
 	public static JDA StartDiscordClient() throws InterruptedException, LoginException {
