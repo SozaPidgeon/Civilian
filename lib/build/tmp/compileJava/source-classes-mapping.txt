@@ -1,0 +1,10 @@
+Civilian/Library.java
+ Civilian.Library
+Civilian/TwitchManager.java
+ TwitchManager
+Civilian/DiscordManager.java
+ DiscordManager
+Civilian/DiscordMessages.java
+ DiscordMessages
+Civilian/Civilian.java
+ Civilian
