@@ -1,1 +1,7 @@
 A  bot to watch you, you cutie :)
+
+if your pi dies, you'll need these things:
+- openjdk8
+- gradle
+- tmux
+- git
