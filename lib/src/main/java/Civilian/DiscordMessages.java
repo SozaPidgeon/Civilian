@@ -40,7 +40,7 @@ public class DiscordMessages extends ListenerAdapter {
 
 	public static void PostTwitchLive(EmbedBuilder goingLiveEmbed, String streamName) {
         String goingLiveNow = streamName + " is going live now";
-        if (streamName.equals("ins0mniasr")) {
+        if (streamName.equals("ins0mniaSR")) {
             goingLiveNow = goingLiveNow + " <@&748788513872412702>";
         }
 		Civilian.jda.getTextChannelById("731702663884046408").sendMessage(goingLiveNow).embed(goingLiveEmbed.build()).queue();
