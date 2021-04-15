@@ -31,7 +31,7 @@ public class DiscordMessages extends ListenerAdapter {
                         guildColour = ANSI_SOMNI;
                     }
 					
-                    System.out.println(guildColour + "[" + event.getGuild().getName() + ": " + event.getChannel().getName() + "] " + ANSI_RESET  + author.getName() + ": " + msg);
+                    // System.out.println(guildColour + "[" + event.getGuild().getName() + ": " + event.getChannel().getName() + "] " + ANSI_RESET  + author.getName() + ": " + msg);
 				}
 				// COMMANDS
 			}
@@ -40,14 +40,12 @@ public class DiscordMessages extends ListenerAdapter {
 
 	public static void PostTwitchLive(EmbedBuilder goingLiveEmbed, String streamName) {
         String goingLiveNow = streamName + " is going live now";
-        if (streamName.equals("ins0mniasr")) {
+        if (streamName.toLowerCase().equals("ins0mniasr")) {
             goingLiveNow = goingLiveNow + " <@&748788513872412702>";
         }
+		
 		Civilian.jda.getTextChannelById("731702663884046408").sendMessage(goingLiveNow).embed(goingLiveEmbed.build()).queue();
+        // Civilian.jda.getTextChannelById("788926831948464148").sendMessage(goingLiveNow).embed(goingLiveEmbed.build()).queue();
 		goingLiveEmbed.clear();
-	}
-
-	public static void PostMessage(String message) {
-		Civilian.jda.getTextChannelById("731702663884046408").sendMessage(message).queue();
 	}
 }
