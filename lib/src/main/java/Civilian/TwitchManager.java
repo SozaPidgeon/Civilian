@@ -11,7 +11,7 @@ import java.util.Locale;
 public class TwitchManager {
     public static final String twitchId = "32p3en14qg28y227gim6phritbu1la";
     public static final String twitchSecret = "q6z3biu1wbo26lgrczly90thm1ht2g";
-    private static final String[] streamer = {"ins0mniasr", "zenonyra", "sozapidgeon", "clark_o_tron", "wasabi__knight", "mistertoxic1", "sylvienukie", "paum_is_me", "tsira_kura", "evorder", "honeybirdie", "thehollowmc", "aquamaster_", "kounterkitty", "cerpintext", "gidge", "manicjamie", "krythomsr"};
+    private static final String[] streamer = {"ins0mniasr", "zenonyra", "clark_o_tron", "wasabi__knight", "mistertoxic1", "sylvienukie", "paum_is_me", "tsira_kura", "evorder", "honeybirdie", "thehollowmc", "aquamaster_", "kounterkitty", "cerpintext", "gidge", "manicjamie", "krythomsr", "sourcreamsupreme"};
 
     public static final String streamerPing = "ins0mniasr";
 
