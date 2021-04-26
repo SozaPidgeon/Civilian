@@ -6,12 +6,13 @@ public class Civilian {
 	public static JDA jda;
 
 	public static void main(String[] args) {
-		System.out.println("Civilian's alarm just went off");
+		System.out.println("");
 		try {
-			System.out.println("Don't forget to brush your teeth with Discord");
+			System.out.println("");
 			jda = DiscordManager.StartDiscordClient();
-			System.out.println("Please reply to Twitch's good morning text");
+			System.out.println("");
 			TwitchManager.StartTwitchClient();
+			System.out.println("Bot Ready...\n");
 		} catch (LoginException | InterruptedException e) {
 			e.getMessage();
 		}

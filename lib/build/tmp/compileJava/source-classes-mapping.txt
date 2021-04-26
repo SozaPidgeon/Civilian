@@ -1,0 +1,14 @@
+Civilian/TwitchManager.java
+ TwitchManager
+Civilian/StreamEvent.java
+ StreamEvent
+Civilian/DiscordManager.java
+ DiscordManager
+Civilian/DiscordMessages.java
+ DiscordMessages
+Civilian/Civilian.java
+ Civilian
+Civilian/Server.java
+ Server
+Civilian/StreamListCustom.java
+ StreamListCustom
