@@ -18,9 +18,9 @@ public class TwitchManager {
     public static final String twitchId = "32p3en14qg28y227gim6phritbu1la";
     public static final String twitchSecret = "q6z3biu1wbo26lgrczly90thm1ht2g";
     
-    private static String[] serverList = {"ins0mniasr", "tsira_kura"};
+    private static String[] serverList = {"ins0mniasr", "tsira_kura", "birdie's cafe"};
 
-    private static long streamPingDelay = 180000;
+    private static long streamPingDelay = 600000;
 
     public static final Color goingLiveColor = new Color(100, 65, 165);
     public static final Color SomniBlue = new Color(0, 102, 255);
@@ -61,8 +61,10 @@ public class TwitchManager {
             }
 
             if (streamStart) {
-                System.out.println("Stream started for: " + stream.getName() + ": " + stream.getTitle());
-            }
+                System.out.println(DiscordMessages.ANSI_STREAM_START + "Stream posted for: " + stream.getName() + ": " + stream.getTitle() + DiscordMessages.ANSI_RESET);
+            } else {
+				System.out.println(DiscordMessages.ANSI_STREAM_DENY + "Stream not posted" + DiscordMessages.ANSI_RESET);
+			}
         });
     }
 

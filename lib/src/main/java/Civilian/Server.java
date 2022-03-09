@@ -32,7 +32,7 @@ public class Server {
 
             streamerPing = "ins0mniasr";
 
-            streamers = new String[]{"ins0mniasr", "sozapidgeon", "eatsdryramen", "colliemonster", "zenonyra", "clark_o_tron", "wasabi__knight", "mistertoxic1", "sylvienukie", "paum_is_me", "tsira_kura", "evorder", "honeybirdie", "thehollowmc", "aquamaster_", "kounterkitty", "cerpintext", "sourcreamsupreme", "jenkar12"};
+            streamers = new String[]{"ins0mniasr", "sozapidgeon", "violetblight", "eisog", "oatmille1", "shyschy", "colettemslp", "erenspace", "kenorah", "valig0", "birdiestblue", "allison8bit", "miikarin", "beatami_", "glowingicefire", "caffeinatedcomposer", "thedancinggrad", "mayonnaisical", "uninformedpotato", "jxtxun", "hollowknightcommunity", "kenorah", "serenam_", "quatopine", "herm8281", "valig0", "femboy_neo", "unfourgettable", "cmot17", "gidge", "quacksilverplays", "pestilentbox2", "ax2u", "blue_sr_", "pickletehdromer", "springslyvi", "krythomsr", "eatsdryramen", "colliemonster", "zenonyra", "clark_o_tron", "wasabi__knight", "mistertoxic1", "sylvienukie", "paum_is_me", "tsira_kura", "evorder", "honeybirdie", "thehollowmc", "aquamaster_", "kounterkitty", "cerpintext", "jenkar12", "pisces_fl", "slaurent22", "manicjamie", "tiramis2"};
             goingLiveChannel = "731702663884046408";
             goingLiveChannelCommunity = "731702663884046408";
             goingLiveRole = "748788513872412702";
@@ -52,6 +52,18 @@ public class Server {
             makeStreamers(streamers);
             System.out.println("");
             lastStream = new StreamEvent("0");
+        } else if (serverName.toLowerCase().equals("birdie's cafe")) {
+            System.out.println("birdie's café\n");
+
+            streamerPing = "birdie";
+
+            streamers = new String[]{"honeybirdie"};
+            goingLiveChannel = "840856581079171073";
+            goingLiveChannelCommunity = "";
+            goingLiveRole = "840863987834421290";
+            makeStreamers(streamers);
+            System.out.println("");
+            lastStream = new StreamEvent("0");
         }
     }
 
@@ -68,10 +80,13 @@ public class Server {
     public boolean doubleCheck(StreamEvent stream, long streamPingDelay) {
         boolean check = false;
         for (int i = 0; i < streamList.length; i++) {
-            if (stream.getName().toLowerCase().equals(streamList[i].getName())) {
-                if (!(stream.getTime()-lastStream.getTime() < streamPingDelay)) {
-                    check = true;
-                }
+            
+			if (stream.getName().toLowerCase().equals(streamList[i].getName())) {
+                System.out.println(DiscordMessages.ANSI_GREY + "new stream time: " + stream.getTime() + "\nold stream time: " + lastStream.getTime() + "\ndifference: " + (stream.getTime()-lastStream.getTime()) + DiscordMessages.ANSI_RESET);
+				
+				if (!(stream.getTime()-lastStream.getTime() < streamPingDelay)) {
+                    					check = true; 
+				}
                 i = streamList.length;
             }
         }

@@ -8,7 +8,7 @@ Civilian/DiscordMessages.java
  DiscordMessages
 Civilian/Civilian.java
  Civilian
-Civilian/Server.java
- Server
 Civilian/StreamListCustom.java
  StreamListCustom
+Civilian/Server.java
+ Server
