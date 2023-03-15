@@ -15,17 +15,15 @@ import java.util.Arrays;
 import java.util.List;
 
 public class TwitchManager {
-    public static final String twitchId = "32p3en14qg28y227gim6phritbu1la";
-    public static final String twitchSecret = "q6z3biu1wbo26lgrczly90thm1ht2g";
+    public static final String twitchId = "##########";
+    public static final String twitchSecret = "##########";
     
-    private static String[] serverList = {"ins0mniasr", "tsira_kura", "birdie's cafe"};
+    private static String[] serverList = {"##########"};
 
     private static long streamPingDelay = 600000;
 
     public static final Color goingLiveColor = new Color(100, 65, 165);
-    public static final Color SomniBlue = new Color(0, 102, 255);
-    public static final Color TsiraPink = new Color(233, 6, 124);
-    public static final Color SozaPurple = new Color(155, 151, 255);
+    public static final Color ########## = new Color(255, 0, 0);
 
     private static TwitchClient twitchBot;
 
@@ -84,12 +82,8 @@ public class TwitchManager {
         String author = stream.getName();
         EmbedBuilder goingLiveEmbed = new EmbedBuilder();
         
-        if (stream.getName().toLowerCase().equals("ins0mniasr")) {
-            goingLiveEmbed.setColor(SomniBlue);
-        } else if (stream.getName().toLowerCase().equals("tsira_kura")) {
-            goingLiveEmbed.setColor(TsiraPink);
-        } else if (stream.getName().toLowerCase().equals("sozapidgeon")) {
-            goingLiveEmbed.setColor(SozaPurple);
+        if (stream.getName().toLowerCase().equals("##########")) {
+            goingLiveEmbed.setColor(##########);
         } else {
             goingLiveEmbed.setColor(goingLiveColor);
         }
