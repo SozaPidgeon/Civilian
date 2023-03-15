@@ -27,43 +27,19 @@ public class Server {
     public Server(String serverName, TwitchClient newTwitchBot) {
         twitchBot = newTwitchBot;
 
-        if (serverName.toLowerCase().equals("ins0mniasr")) {
-            System.out.println("ins0mnia's world\n");
+        if (serverName.toLowerCase().equals("##########")) {
+            System.out.println("##########\n");
 
             streamerPing = "ins0mniasr";
 
-            streamers = new String[]{"ins0mniasr", "sozapidgeon", "violetblight", "eisog", "oatmille1", "shyschy", "colettemslp", "erenspace", "kenorah", "valig0", "birdiestblue", "allison8bit", "miikarin", "beatami_", "glowingicefire", "caffeinatedcomposer", "thedancinggrad", "mayonnaisical", "uninformedpotato", "jxtxun", "hollowknightcommunity", "kenorah", "serenam_", "quatopine", "herm8281", "valig0", "femboy_neo", "unfourgettable", "cmot17", "gidge", "quacksilverplays", "pestilentbox2", "ax2u", "blue_sr_", "pickletehdromer", "springslyvi", "krythomsr", "eatsdryramen", "colliemonster", "zenonyra", "clark_o_tron", "wasabi__knight", "mistertoxic1", "sylvienukie", "paum_is_me", "tsira_kura", "evorder", "honeybirdie", "thehollowmc", "aquamaster_", "kounterkitty", "cerpintext", "jenkar12", "pisces_fl", "slaurent22", "manicjamie", "tiramis2"};
-            goingLiveChannel = "731702663884046408";
-            goingLiveChannelCommunity = "731702663884046408";
-            goingLiveRole = "748788513872412702";
+            streamers = new String[]{"##########"};
+            goingLiveChannel = "##########";
+            goingLiveChannelCommunity = "##########";
+            goingLiveRole = "##########";
             makeStreamers(streamers);
             System.out.println("");
             lastStream = new StreamEvent("0");
 
-        } else if (serverName.toLowerCase().equals("tsira_kura")) {
-            System.out.println("tsira's nest\n");
-
-            streamerPing = "tsira_kura";
-
-            streamers = new String[]{"tsira_kura"};
-            goingLiveChannel = "755572086436790323";
-            goingLiveChannelCommunity = "";
-            goingLiveRole = "833707149535346774";
-            makeStreamers(streamers);
-            System.out.println("");
-            lastStream = new StreamEvent("0");
-        } else if (serverName.toLowerCase().equals("birdie's cafe")) {
-            System.out.println("birdie's café\n");
-
-            streamerPing = "birdie";
-
-            streamers = new String[]{"honeybirdie"};
-            goingLiveChannel = "840856581079171073";
-            goingLiveChannelCommunity = "";
-            goingLiveRole = "840863987834421290";
-            makeStreamers(streamers);
-            System.out.println("");
-            lastStream = new StreamEvent("0");
         }
     }
 
