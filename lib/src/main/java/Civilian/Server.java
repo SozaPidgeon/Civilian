@@ -30,7 +30,7 @@ public class Server {
         if (serverName.toLowerCase().equals("##########")) {
             System.out.println("##########\n");
 
-            streamerPing = "ins0mniasr";
+            streamerPing = "##########";
 
             streamers = new String[]{"##########"};
             goingLiveChannel = "##########";
