@@ -7,7 +7,7 @@ import net.dv8tion.jda.api.EmbedBuilder;
 
 public class DiscordMessages extends ListenerAdapter {
 	
-    public static final String ANSI_SOMNI = "\033[38;2;34;31;255m";
+    public static final String ANSI_CUSTOM = "\033[38;2;34;31;255m";
     public static final String ANSI_STREAM_START = "\033[38;2;0;255;0m";
 	public static final String ANSI_STREAM_DENY = "\033[38;2;255;0;0m";
 	public static final String ANSI_GREY = "\033[38;2;127;127;127m";
@@ -34,13 +34,13 @@ public class DiscordMessages extends ListenerAdapter {
 			if (event.isFromType(ChannelType.TEXT)) {
 
 				// DEFAULT FUNCTIONS
-				if (event.getChannel().getId().equals("820279211704057927")) {
+				if (event.getChannel().getId().equals("##########")) {
 				} else {
-                    if (guild.getName().equals("ins0mnia's World")) {
-                        guildColour = ANSI_SOMNI;
+                    if (guild.getName().equals("##########")) {
+                        guildColour = ANSI_CUSTOM;
                     }
 					
-                    // System.out.println(guildColour + "[" + event.getGuild().getName() + ": " + event.getChannel().getName() + "] " + ANSI_RESET  + author.getName() + ": " + msg);
+                    
 				}
 
 				// COMMANDS
@@ -90,14 +90,5 @@ public class DiscordMessages extends ListenerAdapter {
 
 
 
-	// public static void PostTwitchLive(EmbedBuilder goingLiveEmbed, String streamName) {
-    //     String goingLiveNow = streamName + " is going live now";
-    //     if (streamName.toLowerCase().equals("ins0mniasr")) {
-    //         goingLiveNow = goingLiveNow + " <@&748788513872412702>";
-    //     }
-		
-	// 	Civilian.jda.getTextChannelById("731702663884046408").sendMessage(goingLiveNow).embed(goingLiveEmbed.build()).queue();
-    //     // Civilian.jda.getTextChannelById("788926831948464148").sendMessage(goingLiveNow).embed(goingLiveEmbed.build()).queue();
-	// 	goingLiveEmbed.clear();
-	// }
+
 }
