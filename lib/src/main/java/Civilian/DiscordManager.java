@@ -8,7 +8,7 @@ import java.awt.*;
 import java.util.concurrent.TimeUnit;
 
 public class DiscordManager {
-	private static final String token = "ODAxNDA0NzgxMzQ0MTk0NTYx.YAgMXQ.7K4sLC1mK8OdBf2sholfWd6kHa4";
+	private static final String token = "##########";
 	
 
 	public static JDA StartDiscordClient() throws InterruptedException, LoginException {
@@ -19,7 +19,7 @@ public class DiscordManager {
 
 	public static JDA BotBuilder() throws LoginException {
 		JDABuilder builder = JDABuilder.createDefault(token);
-		builder.setActivity(Activity.watching("a cutie \uD83D\uDC40"));
+		builder.setActivity(Activity.watching("streams"));
 		builder.setStatus(OnlineStatus.ONLINE);
 		builder.addEventListeners(new DiscordMessages());
 		return builder.build();
